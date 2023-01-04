@@ -137,44 +137,577 @@
   });
 </script>
 <!-- Site footer -->
-<footer class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span class="ml-3 text-xl">Aktunotes</span>
-      </a>
-      <p class="mt-2 text-sm text-gray-500"></p>
-      </div>
-  <div class="bg-gray-100">
-    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 aktunotes —
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@aktunotes</a>
-      </p>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-        <a class="text-gray-500">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-          </svg>
-        </a>
-        <a class="ml-3 text-gray-500">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-          </svg>
-        </a>
-        <a class="ml-3 text-gray-500">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-          </svg>
-        </a>
-        <a class="ml-3 text-gray-500">
-        </a>
-      </span>
-    </div>
-  </div>
-</footer>
+<footer class="ct-footer">
+                      <div class="container">
+                          <form name="contentForm" enctype="multipart/form-data" method="post" action="">
+                              <div class="ct-footer-pre text-center-lg">
+                                  <div class="inner">
+                                      <span>Join Aktunotes to receive notes</span>
+                                  </div>
+                                  <div class="inner">
+                                      <div class="form-group">
+                                          <input name="formfields[nl_email]" id="nl_email" class="validate[required]" placeholder="Enter your email address" type="text" value=""> <label for="nl_email" class="sr-only">Email Address</label> <button type="submit" class="btn btn-motive">Join</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </form>
+                          </div>
+                      </div>
+                      <div class="ct-footer-post">
+                          <div class="container">
+                              <div class="inner-left">
+                                  <ul>
+                                      <li>
+                                          <a href="">Contact Us</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="inner-right">
+                                  <p>
+                                      Copyright © 2022 Aktunotes.&nbsp;<a href="">Privacy Policy</a>
+                                  </p>
+                                  <p>
+                                      <a class="ct-u-motive-color" href="https://www.abesit.in/" target="_blank">ABES Institute of Technology</a> NE-3, Near Crossing Republik, Ghaziabad <a href="" target="_blank">Uttar Pradesh 201009</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </footer>
+                  <style>
+                  html,
+
+                  body,
+
+img,
+figure {
+    max-width: 100%
+}
+
+html,
+body {
+    overflow-x: hidden;
+    color: #000;
+    -ms-overflow-style: scrollbar;
+    -webkit-font-smoothing: antialiased
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit
+}
+
+a {
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out
+}
+
+.ct-u-paddingTop10 {
+    padding-top: 10px !important
+}
+
+.ct-footer {
+    background-color: #111;
+    padding-top: 70px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.ct-footer-pre {
+    width: 100%;
+    padding-bottom: 55px;
+    border-bottom: 1px solid #555;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width:1200px) {
+    .ct-footer-pre {
+        display: table
+    }
+    .ct-footer-pre > .inner {
+        display: table-cell;
+        vertical-align: middle
+    }
+}
+
+@media (max-width:1199px) {
+    .ct-footer-pre .form-group {
+        padding-top: 15px
+    }
+}
+
+.ct-footer-pre span {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #ebebeb;
+    font-size: 30px
+}
+
+.ct-footer-pre .form-group {
+    position: relative;
+    margin: 0;
+}
+
+.ct-footer-pre .form-group:before,
+.ct-footer-pre .form-group:after {
+    content: '';
+    display: table
+}
+
+.ct-footer-pre .form-group:after {
+    clear: both
+}
+
+.ct-footer-pre .form-group input {
+    border: 1px solid #00bff3;
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+    padding: 0 30px;
+    margin: 0 5px;
+    border-radius: 0 !important;
+}
+
+@media (min-width:480px) {
+    .ct-footer-pre .form-group input {
+        width: 331px
+    }
+}
+
+.ct-footer-pre .form-group button {
+    height: 50px;
+    position: relative;
+    width: 80px;
+    padding: 0
+}
+
+@media (min-width:480px) {
+    .ct-footer-pre .form-group button {
+        top: -1px
+    }
+}
+
+@media (max-width:479px) {
+    .ct-footer-pre .form-group input {
+        float: left;
+        width: 70%;
+        margin: 0
+    }
+    .ct-footer-pre .form-group button {
+        float: left;
+        width: 30%
+    }
+}
+
+.ct-footer-list {
+    padding: 50px 0;
+    list-style: none;
+    padding-left: 0;
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #555;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width:479px) {
+    .ct-footer-list {
+        padding: 20px 0
+    }
+}
+
+@media (min-width:1200px) {
+    .ct-footer-list > li {
+        width: 20%;
+        display: table-cell;
+        vertical-align: top
+    }
+    .ct-footer-list > li:last-child {
+        width: 7%
+    }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+    .ct-footer-list > li {
+        width: 33.3333%
+    }
+}
+
+@media (min-width:480px) and (max-width:767px) {
+    .ct-footer-list > li {
+        width: 50%
+    }
+}
+
+@media (max-width:479px) {
+    .ct-footer-list > li {
+        width: 100%;
+        text-align: center
+    }
+}
+
+@media (max-width:1199px) {
+    .ct-footer-list > li {
+        display: inline-block;
+        float: left
+    }
+}
+
+.ct-footer-list > li .ct-footer-list-header {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #00bff3;
+    font-size: 30px
+}
+
+.ct-footer-list > li ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ct-footer-list > li ul li a {
+    color: #fff;
+}
+
+.ct-footer-list > li ul li a:hover {
+    text-decoration: underline
+}
+
+.ct-footer-post {
+    background: #000;
+    padding: 30px 0;
+}
+
+.ct-footer-post .inner-left,
+.ct-footer-post .inner-right {
+    padding: 20px 0
+}
+
+.ct-footer-post ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 -20px;
+}
+
+.ct-footer-post ul li {
+    display: inline-block;
+    margin: 0 20px
+}
+
+.ct-footer-post a {
+    color: #fff;
+}
+
+.ct-footer-post a:hover {
+    text-decoration: underline
+}
+
+.ct-footer-post p {
+    color: #fff;
+}
+
+@media (min-width:768px) {
+    .ct-footer-post p {
+        display: inline-block
+    }
+    .ct-footer-post p + p {
+        padding-left: 50px
+    }
+}
+
+@media (min-width:992px) {
+    .ct-footer-post .inner-left {
+        float: left
+    }
+    .ct-footer-post .inner-right {
+        float: right
+    }
+}
+
+@media (max-width:991px) {
+    .ct-footer-post {
+        text-align: center
+    }
+}
+
+.ct-footer-meta {
+    padding-top: 30px;
+}
+
+.ct-footer-meta .ct-socials {
+    padding: 20px 0;
+}
+
+.ct-footer-meta .ct-socials li {
+    padding: 0 3px
+}
+
+.ct-footer--with-button {
+    padding-top: 150px
+}
+
+address {
+    color: #fff;
+    display: inline-block;
+}
+
+address span {
+    font-weight: 600
+}
+
+address a {
+    color: #fff;
+}
+
+address a:hover {
+    text-decoration: underline
+}
+
+@media (max-width:767px) {
+    address {
+        padding-top: 30px
+    }
+}
+
+.btn {
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    color: #111;
+    font-size: 26px;
+    padding: 12px 30px;
+}
+
+.btn.btn-motive {
+    background-color: #eb110a;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.btn.btn-motive:hover {
+    background-color: #f32a07;
+}
+
+.btn.btn-motive:hover:active {
+    background-color: #f62d0a
+}
+
+.btn.btn-violet {
+    color: #fff;
+    background-color: #4f4f99;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.btn.btn-violet:hover {
+    background-color: #37376b;
+}
+
+.btn.btn-violet:hover:active {
+    background-color: #2f2f5b
+}
+
+.btn.btn-green {
+    color: #fff;
+    background-color: #43670f;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.btn.btn-green:hover {
+    background-color: #36520c;
+}
+
+.btn.btn-green:hover:active {
+    background-color: #314a0b
+}
+
+.btn.btn-red {
+    color: #fff;
+    background-color: #da2229;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.btn.btn-red:hover {
+    background-color: #ae1b21;
+}
+
+.btn.btn-red:hover:active {
+    background-color: #9d181e
+}
+
+.btn.btn-white {
+    background-color: #fff;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.btn.btn-white:hover {
+    background-color: #d9d9d9;
+}
+
+.btn.btn-white:hover:active {
+    background-color: #c9c9c9
+}
+
+.btn.btn-large {
+    padding: 20px 50px;
+    font-size: 30px;
+    white-space: normal;
+}
+
+@media (max-width:479px) {
+    .btn.btn-large {
+        padding: 20px 10px;
+        line-height: .9;
+        font-size: 26px;
+        letter-spacing: -.2px
+    }
+}
+.ct-mediaSection {
+    background-attachment: fixed
+}
+
+.ct-section_header--type1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #000;
+    font-size: 115px;
+    text-transform: uppercase;
+}
+
+@media (max-width:479px) {
+    .ct-section_header--type1 {
+        font-size: 60px;
+        line-height: .8
+    }
+}
+
+.ct-section_header--type2 small {
+    font-family: 'coquette', fantasy;
+    font-size: 58px;
+    line-height: .7;
+    display: block;
+    font-weight: 700;
+    position: relative;
+    left: -12px
+}
+
+.ct-section_header--type2 span {
+    font-family: 'Bebas Neue';
+    font-size: 115px;
+    line-height: .8
+}
+
+.ct-section_header--type2 img {
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 15px;
+    padding-right: 3px
+}
+
+.ct-section_header--type3 {
+    text-align: center;
+}
+
+.ct-section_header--type3 small {
+    font-family: 'coquette', fantasy;
+    font-size: 50px;
+    padding: 15px 0;
+    font-weight: 700;
+    color: #fff;
+    background-image: url("/core/fileparse.php/16/urlt/../images/ribbon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block
+}
+
+.ct-section_header--type3 span {
+    font-family: 'Bebas Neue';
+    font-size: 150px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: .85
+}
+
+@media (max-width:479px) {
+    .ct-section_header--type3 small {
+        font-size: 25px
+    }
+    .ct-section_header--type3 span {
+        font-size: 90px
+    }
+}
+
+.ct-section_header--type4 {
+    text-align: center;
+}
+
+.ct-section_header--type4:before,
+.ct-section_header--type4:after {
+    content: '';
+    display: table
+}
+
+.ct-section_header--type4:after {
+    clear: both
+}
+
+.ct-section_header--type4 small {
+    font-family: 'coquette', fantasy;
+    font-size: 50px;
+    color: inherit;
+    font-weight: 700;
+    display: block
+}
+
+.ct-section_header--type4 span {
+    font-family: 'nimbus-sans-condensed', sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+    font-size: 150px;
+    text-transform: uppercase;
+    display: block;
+    line-height: .7
+}
+
+@media (max-width:479px) {
+    .ct-section_header--type4 small {
+        font-size: 40px
+    }
+    .ct-section_header--type4 span {
+        font-size: 80px
+    }
+}
+
+.ct-section_header + p {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    text-align: center;
+}
+
+@media (max-width:479px) {
+    .ct-section_header + p {
+        font-size: 22px
+    }
+}
+
+.ct-section_header--type4 + p {
+    font-family: 'nimbus-sans-condensed', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+@media (max-width:479px) {
+    .ct-section_header--type4 + p {
+        font-size: 28px
+    }
+}
+</style>
 </body>
 </html>
